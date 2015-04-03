@@ -1,0 +1,33 @@
+<ion-view title="History">
+  <ion-content>
+  <ion-slide-box>
+  <ion-slide>
+  	<div>
+    <div class="label">Temperature over last 12 hours</div>
+    <canvas linechart legend=true options="options" data="chart" width="600" height="300"></canvas>
+    <button class="button button-block button-positive" ng-click="refreshHist()">
+        Refresh
+    </button>
+    </div>
+  </ion-slide>
+  <ion-slide>
+  	<div>
+    <div class="label">Temperature over last 24 hours</div>
+    <canvas linechart legend=true options="options" data="chartDay" width="600" height="300"></canvas>
+    <button class="button button-block button-positive" ng-click="refreshHist()">
+        Refresh
+    </button>
+    </div>
+  </ion-slide>
+  <ion-slide>
+  	<div>
+    <div class="label">Temperature over last week</div>
+    <canvas linechart legend=true options="options" data="chartWeek" width="600" height="300"></canvas>
+    <button class="button button-block button-positive" ng-click="refreshHist()">
+        Refresh
+    </button>
+    </div>
+  </ion-slide>
+  </ion-slide-box>
+  </ion-content>
+</ion-view>
